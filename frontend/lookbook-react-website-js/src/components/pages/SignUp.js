@@ -5,8 +5,7 @@ import SignUpMenu from '../SignUpMenu';
 export default function SignUp() {
   return (
     <>
-      <h1 className='sign-up'><SignUpMenu/></h1>
-      
+      <h1 className='sign-up' href="/sign-up"><SignUpMenu/></h1> 
     </>
   )
 }

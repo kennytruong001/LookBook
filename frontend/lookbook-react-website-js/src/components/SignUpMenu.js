@@ -14,6 +14,10 @@ function SignUpMenu() {
             href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
             crossorigin="anonymous"
         />
+        <select name="class_type" id="class_type">
+            <option value="user">User</option>
+            <option value="customer">Customer</option>
+        </select>
         <div class="form-group">
             <label for="email">Email Address</label>
             <input
@@ -32,6 +36,16 @@ function SignUpMenu() {
             id="firstName"
             name="firstName"
             placeholder="Enter first name"
+            />
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input
+            type="text"
+            class="form-control"
+            id="lastName"
+            name="lastName"
+            placeholder="Enter last name"
             />
         </div>
         <div class="form-group">
