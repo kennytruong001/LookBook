@@ -4,11 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
-/public/favicon.ico
-/public/index.html
-/public/*.png
-/public/manifest.json
-/public/robots.txt
+/public
+
 
 # testing
 /coverage
