@@ -3,7 +3,7 @@ from helper import getConfigs
 
 def create_app():
     app = Flask(__name__)
-    app.config['SECRET_KET'] = 'akljsdnfkjansd'
+    #app.config['SECRET_KET'] = 'akljsdnfkjansd'
 
     from routes import user_views, customer_views
     from routes import auth
