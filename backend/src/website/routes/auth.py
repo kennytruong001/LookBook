@@ -3,7 +3,7 @@ from ...extra import config as secret
 #from .models import User
 #from werkzeug.security import generate_password_hash, check_password_hash
 from ...extra import db   ##means from __init__.py import db
-from flask_login import login_user, login_required, logout_user, current_user
+#from flask_login import login_user, login_required, logout_user, current_user
 import boto3 
 import hashlib
 import json
@@ -12,13 +12,13 @@ from website.helper import getConfigs
 
 from ..models.user import User
 
-secret = getConfigs()
+keys = getConfigs()
 #user_bp = Blueprint('user_routes', __name__, url_prefix='/user')
 auth = Blueprint('auth', __name__)
 
 client = boto3.client('dynamodb')
-table = boto3.resource('dynamodb', aws_access_key_id=secret["ACCESS_KEY_ID"],
-                     aws_secret_access_key=secret["ACCESS_SECRET_KEY"]).Table("LookBook_Database")
+table = boto3.resource('dynamodb', aws_access_key_id=keys["ACCESS_KEY_ID"],
+                     aws_secret_access_key=keys["ACCESS_SECRET_KEY"]).Table("LookBook_Database")
                     
 
 
