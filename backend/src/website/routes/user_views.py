@@ -15,8 +15,8 @@ views = Blueprint('views', __name__)
 def home():
     user = request.args.get('name')
     userInfo = table.get_item(Key={"User":user})["Item"]
-    portfolio = userInfo["Portfolio"]
-    balance = userInfo["Balance"]
+
+    portfolio = userInfo["Availability"]
 
     if request.method == 'POST':
         action = request.form.get('action')
