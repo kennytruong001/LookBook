@@ -21,7 +21,7 @@ def create_app() -> Flask:
                      aws_secret_access_key=secret["ACCESS_SECRET_KEY"]).Table("LookBook_Database")
 
     from .views import views
-    from ..user.routes.auth import auth
+    from .auth import auth
 
     app.register_blueprint(views, url_prefix='/')
     app.register_blueprint(auth, url_prefix='/')

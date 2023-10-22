@@ -13,7 +13,7 @@ class User():
             password: str = None,
             email: str = None,
             phone_number: str = None,
-            availability: dict = {"Sunday": {}, 
+            schedule: dict = {"Sunday": {}, 
                                  "Monday": {}, 
                                  "Tuesday": {}, 
                                  "Wednesday": {},
@@ -35,7 +35,7 @@ class User():
             self.password = password
             self.email = email
             self.phone_number = phone_number
-            self.availability = availability
+            self.schedule = schedule
         
 
     
